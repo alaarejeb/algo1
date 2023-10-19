@@ -1,0 +1,22 @@
+ALGORITHM three-nb-add
+VAR
+  str:STRING
+  NM:CHAR
+  NV:CHAR
+  NC:CHAR
+  i:INTEGER
+BEGIN
+  Read(str)
+  NC=str.length
+  FOR i FROM 0 TO str.length-1 STEP 1  DO
+  IF (str[i]=="a"or"e"or"u"or"o"or"i"or"y") THEN
+  NV=NV+1
+  END_IF
+    IF (str[i]=" ") THEN
+        NM=NM+1
+    END_IF
+  END_FOR
+        Write("number of words",NM)
+        Write("number of voilles",NV)
+        Write("number de charater",NC)
+END
